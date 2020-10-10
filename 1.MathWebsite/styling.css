@@ -1,0 +1,227 @@
+body {
+    font: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    width: 90%;
+/*    height: 100px;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+/*    height: 100px;*/
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#brand {
+/*    float: left;*/
+    flex: 50%;
+    min-width: 400px;
+}
+
+h1 a {
+    font-size: 50px;
+    font-weight: 100;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+#searchbox {
+/*    float: right;*/
+    background: linear-gradient(#E4F289, #B7E953);
+    background: -webkit-linear-gradient(#E4F289, #B7E953);
+    background: -o-linear-gradient(#E4F289, #B7E953);
+    background: -moz-linear-gradient(#E4F289, #B7E953);
+    min-width: 400px;
+/*    height: 50px;*/
+    padding: 20px 20px 0px 20px;
+/*    margin-top: 20px;*/
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: firebrick;
+    background: white url(images/LogoMathSearch.png) right center no-repeat;
+    border: 1px solid black;
+
+
+}
+
+.submit {
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: dodgerblue;
+    font-size: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu {
+/*    height: 70px;*/
+    background: linear-gradient(skyblue, aqua);
+    background: -o-linear-gradient(skyblue, aqua);
+    background: -webkit-linear-gradient(skyblue, aqua);
+    background: -moz-linear-gradient(skyblue, aqua);
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu a{
+/*    float: left;*/
+    padding: 0 30px;
+    height: 30px;
+    border-right: 1px solid blue;
+}
+
+#menu a:last-child {
+    border-right: none;
+}
+
+#menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: blue;
+    line-height: 30px;
+    -webkit-transition: font-size 0.25s ease;
+    -moz-transition: font-size 0.25s ease;
+    -o-transition: font-size 0.25s ease;
+    -ms-transition: font-size 0.25s ease;
+    transition: font-size 0.25s ease;
+}
+
+#menu a:hover,
+#menu a.active {
+    font-size: 18px;
+    font-weight: bold;
+}
+/*small screens: vertical menu*/
+@media screen and (max-width: 700px){
+   #menu {
+    flex-direction: column;
+       align-content: center; 
+}
+    #menu a{
+        border-right: none;
+    }
+}
+
+#introduction {
+    background: linear-gradient(skyblue, aqua);
+    background: -webkit-linear-gradient(skyblue, aqua);
+    background: -o-linear-gradient(skyblue, aqua);
+    background: -moz-linear-gradient(skyblue, aqua);
+    padding: 30px;
+    margin: 20px 0;
+}
+
+#introduction h3 {
+    font-size: 45px;
+
+}
+
+#introduction p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarWrapper{
+    flex: 50;
+    padding: 10px;
+}
+.sidebar {
+    height: 100%;
+    width: 100%;
+    border: 1px solid dodgerblue;
+    border-radius: 20px;
+    padding: 10px 30px;
+/*    flex: 50%;*/
+
+}
+
+.sidebar ul {
+    padding-top: 8px;
+}
+
+.sidebar h3 {
+    color: dodgerblue;
+    font-size: 30px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    font-weight: bold;
+    font-size: 23px;
+    -webkit-transition: font-size 0.25s ease;
+    -moz-transition: font-size 0.25s ease;
+    -o-transition: font-size 0.25s ease;
+    -ms-transition: font-size 0.25s ease;
+    transition: font-size 0.25s ease;
+}
+
+/*
+#leftsidebar {
+    float: left;
+}
+*/
+
+#leftsidebar ul li {
+    padding: 6px 0px 6px 10px;
+    list-style-image: url(images/LogoMakrPoint.png)
+}
+
+#rightsidebar ul li {
+    background: url(images/LogoMakrCheck.png) no-repeat left center;
+    padding: 20px 0px 20px 70px;
+}
+/*
+
+#rightsidebar {
+    float: right;
+}
+*/
+
+.footer {
+    height: 60px;
+    background: linear-gradient(skyblue, aqua);
+    background: -webkit-linear-gradient(skyblue, aqua);
+    background: -o-linear-gradient(skyblue, aqua);
+    background: -moz-linear-gradient(skyblue, aqua);
+    padding: 10px 30px;
+    margin-top: auto;
+
+}
